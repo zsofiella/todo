@@ -8,18 +8,31 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-<div class="main">
-    <h1>Daily To-Do List Manager</h1>
-    <form class="" action="index.html" method="post">
-        <input type="text" placeholder="new task" name="task">
-        <button type="submit"><strong>ADD</strong></button>
-    </form>
-    <div class="tasksBoard">
-        <ul>
-            <li><span class="delete">x</span><input type="checkbox"> <label> </label></li>
-        </ul>
-    </div>       
-</div>    
+<div class="container">
+    <h3 class="body__day">Tuesday</h3>
+    <h3 class="body__date">2020-12-10</h3>
+    <div class="body__todo-insert">
+        <input class="todo__input" type="text" placeholder="Take the garbage out">
+        <button class="todo__btn">
+            <i class="fa fa-plus"></i>
+        </button>
+    </div>
+    <p>You have
+        <span class="todo__number">0</span>
+    pending items</p>
+    <div class="todo__list--pending">
+    </div>
+    <div class="todo__list--done">
+    <div class="todo__footer">
+        <button class="footer__btn--complete">
+            Show Complete
+        </button>
+        <button class="footer__btn--clear">
+            Clear All
+        </button>
+    </div>
+    </div>
+</div>
 <script src="todo.js"></script>  
 </body>
 </html>
